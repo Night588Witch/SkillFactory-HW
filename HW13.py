@@ -4,10 +4,10 @@ for i in range(numtic):
         age = int(input('Введите ваш возраст:'))
         if age < 18:
             cost = cost + 0
-        elif 18 < age < 21:
+        elif 18 < age < 25:
             cost = cost + 990
         else:
             cost = cost + 1390
 if numtic > 3:
     cost = cost*0.9
-print(round(cost))
+print('Итоговая сумма:' + ' ' + str(round(cost)) + ' ' + 'рублей')
