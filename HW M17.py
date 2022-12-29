@@ -1,0 +1,15 @@
+per_cent = {'ТКБ': 0.056, 'СКБ': 0.059, 'ВТБ': 0.0428, 'СБЕР': 0.040}
+money = int(input("Сколько денег хотите положить под проценты:"))
+depositT = round(money*per_cent['ТКБ'])
+depositS = round(money*per_cent['СКБ'])
+depositV = round(money*per_cent['ВТБ'])
+depositSb = round(money*per_cent['СБЕР'])
+deposit_i = (depositT, depositS, depositV, depositSb)
+depositmax = max(deposit_i)
+
+print("Накопленные средства за год вклада:")
+print("ТКБ:", depositT)
+print("СКБ:", depositS)
+print("ВТБ:", depositV)
+print("СБЕР:", depositSb)
+print("Максимальная сумма, которую вы можете заработать:", depositmax)
